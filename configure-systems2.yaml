@@ -4,8 +4,8 @@
   become: yes
 
   tasks:
-- name:
-  ping:
+  - name:
+    ping:
   
 - name: Call Roles
   hosts: 54.161.195.211

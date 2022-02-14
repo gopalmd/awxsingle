@@ -1,11 +1,11 @@
 # Playbook to call multiple roles to configure systems
 - name: Configure systems
-  hosts: 54.161.195.211
+  hosts: 3.93.149.182
   become: yes
 
   tasks:
   - name:
-    ping:
+    win_ping:
   
 - name: Call Roles
   hosts: 54.161.195.211

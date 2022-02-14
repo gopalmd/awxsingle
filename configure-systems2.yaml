@@ -7,10 +7,4 @@
   - name:
     win_ping:
   
-- name: Call Roles
-  hosts: 54.161.195.211
-  roles:
-   #- hostname
-   #- firewalld
-   #- ntp-config
-   - motd
+

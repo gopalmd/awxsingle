@@ -1,6 +1,6 @@
 - name:
-    yum:
-      name: /tmp/jre_linux.rpm
-      state: latest
+  yum:
+    name: /tmp/jre_linux.rpm
+    state: latest
 
 

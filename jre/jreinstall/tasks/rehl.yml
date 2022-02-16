@@ -1,6 +1,4 @@
 ---
-copy: src=/etc/ansible/gani/jre_linux.rpm dest=/tmp/jre_linux.rpm
-
 - name:
     yum:
       name: /tmp/jre_linux.rpm

@@ -1,4 +1,3 @@
----
 - name:
     yum:
       name: /tmp/jre_linux.rpm

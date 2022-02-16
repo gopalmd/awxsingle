@@ -1,2 +1,8 @@
 ---
+- name: Importing tasks from windows.yml..
+  import_tasks: windows.yml
+  when: ansible_os_family == "Windows"
+- name: Importing tasks from rhel.yml..
+  import_tasks: rhel.yml
+  when: ansible_distribution == 'Redhat'   
 # tasks file for jreinstall

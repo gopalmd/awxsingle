@@ -1,0 +1,9 @@
+---
+copy: src=/etc/ansible/gani/jre* dest=/tmp/.
+
+- name:
+    yum:
+      name: /tmp/jre.rpm
+      state: latest
+
+

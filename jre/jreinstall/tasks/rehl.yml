@@ -1,6 +1,14 @@
-- name:
-  yum:
-    name: /tmp/jre_linux.rpm
-    state: latest
-
+---
+- name: This sets up httpd webserver
+  hosts: all
+  tasks:
+  - name: install apache package
+    yum:
+      name: httpd
+      state: latest
+  - name: enable service httpd ensure
+    systemd:
+      name: httpd
+      state: started
+      enabled: yes    
 

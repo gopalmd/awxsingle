@@ -1,8 +1,8 @@
 ---
 - name: ping servers 
   hosts: all
-  become: true
-  tasks:
+  become: yes 
 
 - name: install apache package
-  ping:
+  tasks:
+  - ping

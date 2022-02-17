@@ -4,4 +4,4 @@
 
 - name: pingservers 
   tasks:
-    - ping
+    - ping:

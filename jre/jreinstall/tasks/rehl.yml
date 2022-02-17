@@ -1,14 +1,8 @@
 ---
-- name: This sets up httpd webserver
+- name: ping servers 
   hosts: all
+  become: true
   tasks:
-- name: install apache package
-    yum:
-      name: httpd
-      state: latest
-- name: enable service httpd ensure
-    systemd:
-      name: httpd
-      state: started
-      enabled: yes    
 
+- name: install apache package
+    ping:

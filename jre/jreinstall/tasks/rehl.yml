@@ -2,11 +2,11 @@
 - name: This sets up httpd webserver
   hosts: all
   tasks:
-  - name: install apache package
+- name: install apache package
     yum:
       name: httpd
       state: latest
-  - name: enable service httpd ensure
+- name: enable service httpd ensure
     systemd:
       name: httpd
       state: started

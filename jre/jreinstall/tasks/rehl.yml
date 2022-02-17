@@ -1,6 +1,5 @@
 ---
-- name: "hello"
-- hosts: all
+- hosts: 3.84.9.56
 
 - name: pingservers 
   tasks:

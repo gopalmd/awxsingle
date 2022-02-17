@@ -3,6 +3,6 @@
   hosts: all
   become: yes 
 
-- name: install apache package
+- name: pingservers 
   tasks:
-  - ping
+  ping

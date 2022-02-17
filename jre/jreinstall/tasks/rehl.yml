@@ -1,8 +1,7 @@
 ---
-- name: ping servers 
-  hosts: all
-  become: yes 
+- name: "hello"
+- hosts: all
 
 - name: pingservers 
   tasks:
-  ping
+    - ping
